@@ -2,36 +2,45 @@
 <html>
 
 <head>
-    <title>LA TV Shows | Home</title>
-    <meta name="description" content="A Catalog of Shows Set in Los Angeles">
+    <title>Speedster Showroom | Home</title>
+    <meta name="description" content="A Catalog of motorcyles from different brands">
     <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="scripts.js"></script>
+    <script type="module" src="scripts.js"></script>
+    <script type="text/javascript" src="quoteScript.js"></script>
 </head>
 
 <body>
     <header class="main-header">
-        <h1 class="title">LA TV Shows</h1>
+        <h1 class="title">Speedster Showroom</h1>
     </header>
+
+    <div class="filters">
+        <select id="selectBrand" class="selectBrand">
+            <option value="">select..</option>
+            <option value="kawasaki">Kawasaki</option>
+            <option value="honda">Honda</option>
+            <option value="yamaha">Yamaha</option>
+        </select> 
+    </div>
+
     <div id="card-container">
         
     </div>
     <div class="card" style="display: none;">
         <div class="card-content">
-            <h2>TV Show Title</h2>
-            <img src="" alt="TV Show Poster">
-            <ul>
-                <li>Bullet Point 1</li>
-                <li>Bullet Point 2</li>
-                <li>Bullet Point 3</li>
-            </ul>
+            <h2>Motorcycle Name</h2>
+            <img src="" alt="motorcycle">
+            <h5>Description</h5>
+            <h4>Price</h4>
+            <a href="">Link</a>
         </div>
     </div>
     <div class="footer">
         <button onclick="quoteAlert();">
-            Get A Quote!
+            Inspiring Developer Quote
         </button>
-        <button onclick="removeLastCard();">
-            Remove A Card!
+        <button id="shuffleMotos">
+            Shuffle!
         </button>
     </div>
 </body>
